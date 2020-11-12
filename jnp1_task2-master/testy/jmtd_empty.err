@@ -1,0 +1,15 @@
+encstrset_new()
+encstrset_new: set #0 created
+encstrset_size(0)
+encstrset_size: set #0 contains 0 element(s)
+encstrset_copy(0, 0)
+encstrset_remove(0, "", "")
+encstrset_remove: set #0, cypher "" was not present
+encstrset_test(0, "", "")
+encstrset_test: set #0, cypher "" is not present
+encstrset_clear(0)
+encstrset_clear: set #0 cleared
+encstrset_insert(0, "", "")
+encstrset_insert: set #0, cypher "" inserted
+encstrset_delete(0)
+encstrset_delete: set #0 deleted
