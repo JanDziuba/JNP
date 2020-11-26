@@ -1,0 +1,89 @@
+encstrset_new()
+encstrset_new: set #0 created
+encstrset_new()
+encstrset_new: set #1 created
+encstrset_new()
+encstrset_new: set #2 created
+encstrset_delete(2)
+encstrset_delete: set #2 deleted
+encstrset_delete(2)
+encstrset_delete: set #2 does not exist
+encstrset_insert(0, "ala", "ala")
+encstrset_insert: set #0, cypher "00 00 00" inserted
+encstrset_test(0, "ala", "ala")
+encstrset_test: set #0, cypher "00 00 00" is present
+encstrset_test(0, "kot", "kot")
+encstrset_test: set #0, cypher "00 00 00" is present
+encstrset_insert(0, "kot", "kot")
+encstrset_insert: set #0, cypher "00 00 00" was already present
+encstrset_size(0)
+encstrset_size: set #0 contains 1 element(s)
+encstrset_remove(0, "kot", "kot")
+encstrset_remove: set #0, cypher "00 00 00" removed
+encstrset_size(0)
+encstrset_size: set #0 contains 0 element(s)
+encstrset_insert(0, "kot", "kot")
+encstrset_insert: set #0, cypher "00 00 00" inserted
+encstrset_insert(0, "kot", "ala")
+encstrset_insert: set #0, cypher "0A 03 15" inserted
+encstrset_insert(0, "ala", "kot")
+encstrset_insert: set #0, cypher "0A 03 15" was already present
+encstrset_insert(0, "ala", "ala")
+encstrset_insert: set #0, cypher "00 00 00" was already present
+encstrset_size(0)
+encstrset_size: set #0 contains 2 element(s)
+encstrset_clear(0)
+encstrset_clear: set #0 cleared
+encstrset_size(0)
+encstrset_size: set #0 contains 0 element(s)
+encstrset_insert(0, "ala", "ala")
+encstrset_insert: set #0, cypher "00 00 00" inserted
+encstrset_insert(0, "ma", "ala")
+encstrset_insert: set #0, cypher "0C 0D" inserted
+encstrset_insert(0, "ala", "ma")
+encstrset_insert: set #0, cypher "0C 0D 0C" inserted
+encstrset_insert(0, "ma", "ma")
+encstrset_insert: set #0, cypher "00 00" inserted
+encstrset_size(0)
+encstrset_size: set #0 contains 4 element(s)
+encstrset_insert(1, "ala", "kot")
+encstrset_insert: set #1, cypher "0A 03 15" inserted
+encstrset_size(1)
+encstrset_size: set #1 contains 1 element(s)
+encstrset_test(0, "alk", "alk")
+encstrset_test: set #0, cypher "00 00 00" is present
+encstrset_test(0, "alk", "ma")
+encstrset_test: set #0, cypher "0C 0D 06" is not present
+encstrset_test(0, "ma", "alk")
+encstrset_test: set #0, cypher "0C 0D" is present
+encstrset_clear(1)
+encstrset_clear: set #1 cleared
+encstrset_insert(1, "alk", "ma")
+encstrset_insert: set #1, cypher "0C 0D 06" inserted
+encstrset_insert(1, "alk", "mama")
+encstrset_insert: set #1, cypher "0C 0D 06" was already present
+encstrset_size(0)
+encstrset_size: set #0 contains 4 element(s)
+encstrset_size(1)
+encstrset_size: set #1 contains 1 element(s)
+encstrset_insert(0, "alk", "ma")
+encstrset_insert: set #0, cypher "0C 0D 06" inserted
+encstrset_size(0)
+encstrset_size: set #0 contains 5 element(s)
+encstrset_copy(1, 0)
+encstrset_copy: copied cypher "0C 0D 06" was already present in set #0
+encstrset_size(0)
+encstrset_size: set #0 contains 5 element(s)
+encstrset_size(1)
+encstrset_size: set #1 contains 1 element(s)
+encstrset_remove(0, "alk", "ma")
+encstrset_remove: set #0, cypher "0C 0D 06" removed
+encstrset_copy(0, 1)
+encstrset_copy: cypher "00 00" copied from set #0 to set #1
+encstrset_copy: cypher "0C 0D 0C" copied from set #0 to set #1
+encstrset_copy: cypher "0C 0D" copied from set #0 to set #1
+encstrset_copy: cypher "00 00 00" copied from set #0 to set #1
+encstrset_size(0)
+encstrset_size: set #0 contains 4 element(s)
+encstrset_size(1)
+encstrset_size: set #1 contains 5 element(s)

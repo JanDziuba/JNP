@@ -1,0 +1,20 @@
+encstrset_delete(2137)
+encstrset_delete: set #2137 does not exist
+encstrset_size(2137)
+encstrset_size: set #2137 does not exist
+encstrset_insert(2137, "", "")
+encstrset_insert: set #2137 does not exist
+encstrset_remove(2137, "", "")
+encstrset_remove: set #2137 does not exist
+encstrset_test(2137, "", "")
+encstrset_test: set #2137 does not exist
+encstrset_clear(2137)
+encstrset_clear: set #2137 does not exist
+encstrset_copy(2137, 2137)
+encstrset_copy: set #2137 does not exist
+encstrset_new()
+encstrset_new: set #0 created
+encstrset_copy(2137, 0)
+encstrset_copy: set #2137 does not exist
+encstrset_copy(0, 2137)
+encstrset_copy: set #2137 does not exist
